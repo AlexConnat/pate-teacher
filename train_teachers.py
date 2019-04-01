@@ -92,7 +92,7 @@ def train_teacher(dataset, nb_teachers, teacher_id):
 	
   stdnt_data = test_data[:1000] #test_data[:FLAGS.stdnt_share]
   preds_for_student = deep_cnn.softmax_preds(stdnt_data, ckpt_path_final)
-  np.save(FLAGS.train_dir + '/' + 'predictions_teacher' + str(teacher_id), preds_for_student)
+  np.save(FLAGS.train_dir + '/predictions.npy', preds_for_student)
 
   # Compute teacher accuracy
   precision = metrics.accuracy(teacher_preds, test_labels)

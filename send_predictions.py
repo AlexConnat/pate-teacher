@@ -11,7 +11,7 @@ sock.connect( (SERVER_IP, SERVER_PORT) )
 
 print("[*] Connected to " + SERVER_IP + "\n")
 
-filename = "mnist_10_teachers_0.ckpt-2999.data-00000-of-00001"
+filename = "checkpoints/predictions.npy"
 with open(filename, "rb") as f:
 	
 	data = f.read(CHUNK_SIZE)
