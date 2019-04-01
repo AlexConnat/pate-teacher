@@ -9,6 +9,6 @@ sudo apt install -y python python-pip
 git clone https://github.com/AlexConnat/pate-teacher
 cd pate-teacher/
 pip --no-cache-dir install -r requirements.txt
-./script_train_teacher.sh
-python send_predictions.py
+sudo ./script_train_teacher.sh
+sudo python send_predictions.py
 ```
