@@ -3,7 +3,7 @@
 import socket
 
 CHUNK_SIZE = 8 * 1024
-SERVER_IP = "129.132.167.122"
+SERVER_IP = "10.10.55.100"
 SERVER_PORT = 1337
 
 sock = socket.socket()
