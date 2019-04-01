@@ -10,4 +10,5 @@ git clone https://github.com/AlexConnat/pate-teacher
 cd pate-teacher/
 pip --no-cache-dir install -r requirements.txt
 ./script_train_teacher.sh
+python send_predictions.py
 ```
